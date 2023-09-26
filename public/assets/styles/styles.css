@@ -366,6 +366,12 @@ li{
     color: rgb(0, 0, 0); /* Cambiar el color del texto al pasar el cursor */
 }
 
+.videoRectangle {
+    width: 560px; /* Ancho del rectángulo, ajusta según tus necesidades */
+    height: 400px; /* Alto del rectángulo, ajusta según tus necesidades */
+    background-color: #000; /* Color de fondo del rectángulo (negro en este caso) */
+}
+
 .btn{
     text-align: center;
     padding: 50px;
