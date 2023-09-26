@@ -259,6 +259,12 @@ li{
 
 }
 
+.textBackground{
+    background-color: rgba(103, 179, 111, 0.5);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
 .filter {
     width: 350px;
     height: 300px;
@@ -277,7 +283,7 @@ li{
     margin:2vm;
     margin-bottom: 30px;
     margin-top: 2vw;
- 
+
 
 }
 
@@ -309,13 +315,55 @@ li{
     transform: scale(2.0);
     text-align: center;
     font-size: medium;
+
+
 }
 
 .filter:hover h2 {
 
     transition: all .25s ease;
-    transform: scale(1.0);
+    transform: scale(0.0);
     bottom: 10px;
+}
+
+.textBackground2{
+    background-color: rgba(103, 179, 111, 0.8); /* Un fondo más sólido y menos transparente */
+    border-radius: 10px;
+    padding: 1rem;
+    color: white; /* Texto en color blanco para mayor contraste */
+    text-align: center; /* Centrar el texto horizontalmente */
+    font-size: 18px; /* Tamaño de fuente más grande */
+}
+
+.filter ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    padding: 0;
+    z-index: 20;
+    opacity: 0;
+    background-color: rgba(103, 179, 111, 0.9); /* Fondo semi-transparente para la lista */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Sombra para resaltar */
+    transition: opacity 0.3s, transform 0.3s; /* Transiciones suaves */
+}
+
+.filter:hover ul {
+    opacity: 1; /* Mostrar la lista cuando el cursor está sobre el contenedor */
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+.filter li {
+    margin: 12px 0;
+    font-size: 16px; /* Tamaño de fuente para los elementos de la lista */
+    text-align: center; /* Centrar el texto horizontalmente */
+    transition: color 0.3s; /* Cambiar el color del texto de manera suave */
+}
+
+.filter li:hover {
+    color: rgb(0, 0, 0); /* Cambiar el color del texto al pasar el cursor */
 }
 
 .btn{
@@ -392,9 +440,17 @@ h1 {
     margin-bottom: 8px;
     opacity: 1;
 }
+
+.card img{
+    height: 100%;
+    z-index: 10;
+    transition: all .25s ease;
+}
+
 .card:hover img{
     transform: scale(1.25);
 }
+
 .title{
     text-align: center;
 }
@@ -410,11 +466,6 @@ h1 {
     transition: all .25s ease;
 }
 
-.card img{
-    height: 100%;
-    z-index: 10;
-    transition: all .25s ease;
-}
 .card .text{
     z-index: 30;
     position: absolute;
@@ -513,6 +564,15 @@ body {
     justify-content: center;
     text-align: center;
 }
+
+.titleBackground {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1% 0;
+    font-size: 20px;
+    background-color: #ffffff;
+}
+
 
 .imgContainer {
     width: 85%;
